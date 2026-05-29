@@ -1,0 +1,1392 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Schumacher â€” Senior Designer & Brand Strategist</title>
+  <meta name="description" content="Senior graphic designer and brand strategist with 12+ years of experience. Currently managing design across 7 brands and 2 franchise groups at FullSpeed Automotive." />
+  <meta property="og:title" content="Ian Schumacher â€” Senior Designer & Brand Strategist" />
+  <meta property="og:description" content="12+ years building brand systems that scale. Currently sole creative for 475+ franchise locations." />
+  <meta property="og:image" content="og-image-ian.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ianschumacher.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ian Schumacher â€” Senior Designer & Brand Strategist" />
+  <meta name="twitter:description" content="12+ years building brand systems that scale. Currently sole creative for 475+ franchise locations." />
+  <meta name="twitter:image" content="og-image-ian.jpg" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="canonical" href="https://ianschumacher.com" />
+  <link rel="icon" type="image/png" href="favicon-ian.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600;1,9..144,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* â”€â”€ TOKENS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    :root {
+      --sky:        #0ea5e9;
+      --sky-dark:   #0878b5;
+      --sky-light:  #e0f5fd;
+      --mint:       #4ec994;
+      --mint-dark:  #25a373;
+      --mint-light: #e0f7ef;
+      --off-white:  #f8f6f2;
+      --warm-rule:  #e8e5df;
+      --c-primary:  #0a0a0a;
+      --c-secondary:#3d3d3d;
+      --c-tertiary: #737373;
+      --c-hairline: #d4d4d4;
+      --serif:      'Fraunces', serif;
+      --sans:       'DM Sans', sans-serif;
+      --mono:       'JetBrains Mono', monospace;
+      --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* â”€â”€ RESET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 80px; }
+    body {
+      font-family: var(--sans);
+      background: var(--off-white);
+      color: var(--c-secondary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* â”€â”€ UTILITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .mono { font-family: var(--mono); }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--c-tertiary);
+      text-transform: uppercase;
+    }
+
+    /* â”€â”€ CUSTOM CURSOR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    body { cursor: none; }
+    #cursor {
+      width: 18px; height: 18px;
+      border: 1.5px solid var(--sky);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s var(--ease-out), width 0.2s var(--ease-out), height 0.2s var(--ease-out), background 0.2s;
+      mix-blend-mode: multiply;
+    }
+    #cursor.hover {
+      width: 40px; height: 40px;
+      background: var(--sky-light);
+    }
+    #cursor-dot {
+      width: 4px; height: 4px;
+      background: var(--sky);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%);
+    }
+
+    /* â”€â”€ FOCUS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    :focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    nav.scrolled {
+      background: rgba(248, 246, 242, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 var(--c-hairline);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--c-primary);
+      letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--sky); }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--c-tertiary);
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 1px;
+      background: var(--sky);
+      transition: width 0.2s var(--ease-out);
+    }
+    .nav-links a:hover { color: var(--c-primary); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-resume {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border: 1.5px solid var(--sky);
+      color: var(--sky);
+      border-radius: 3px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-resume:hover {
+      background: var(--sky);
+      color: #fff;
+    }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--c-primary);
+      transition: 0.3s;
+    }
+
+    /* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 80px;
+      align-items: center;
+    }
+    .hero-rule {
+      width: 48px; height: 2px;
+      background: var(--sky);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow { margin-bottom: 20px; }
+    .hero-headline {
+      font-family: var(--serif);
+      font-size: clamp(40px, 5.5vw, 72px);
+      color: var(--c-primary);
+      line-height: 1.06;
+      letter-spacing: -0.035em;
+      font-weight: 700;
+      font-variation-settings: 'opsz' 144;
+      margin-bottom: 28px;
+    }
+    .hero-headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--sky);
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--c-secondary);
+      line-height: 1.65;
+      max-width: 520px;
+      margin-bottom: 40px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sky);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 3px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--sky-dark); transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid var(--mint);
+      color: var(--mint-dark);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 3px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { background: var(--mint-light); transform: translateY(-1px); }
+    .hero-stats { display: flex; gap: 40px; }
+    .hero-stat-num {
+      font-family: var(--serif);
+      font-size: 36px;
+      color: var(--c-primary);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      font-weight: 700;
+      font-variation-settings: 'opsz' 144;
+    }
+    .hero-stat-num span { color: var(--sky); }
+    .hero-stat-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--c-tertiary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .hero-photo-wrap { position: relative; }
+    .hero-photo-frame {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--c-hairline);
+    }
+    .hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo-accent {
+      position: absolute;
+      bottom: -16px; right: -16px;
+      width: 120px; height: 120px;
+      border: 2px solid var(--sky);
+      border-radius: 4px;
+      z-index: -1;
+    }
+    .hero-photo-tag {
+      position: absolute;
+      top: 20px; left: -20px;
+      background: var(--off-white);
+      border: 0.5px solid var(--c-hairline);
+      border-radius: 3px;
+      padding: 10px 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .hero-photo-tag .tag-num {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--sky);
+      line-height: 1;
+    }
+    .hero-photo-tag .tag-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--c-tertiary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--warm-rule) 1px, transparent 1px),
+        linear-gradient(90deg, var(--warm-rule) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    .hero-grid-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, var(--off-white) 30%, transparent 70%);
+    }
+
+    /* â”€â”€ SECTION BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    section { padding: 100px 0; }
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      padding-bottom: 20px;
+      border-bottom: 0.5px solid var(--c-hairline);
+    }
+    .section-number {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--c-tertiary);
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.5vw, 44px);
+      color: var(--c-primary);
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      font-weight: 700;
+      font-variation-settings: 'opsz' 144;
+    }
+
+    /* â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #about { background: var(--c-primary); }
+    #about .section-title { color: var(--off-white); }
+    #about .section-number { color: rgba(255,255,255,0.35); }
+    #about .section-header { border-bottom-color: rgba(255,255,255,0.1); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-body { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.75; }
+    .about-body p + p { margin-top: 20px; }
+    .about-body strong { color: var(--sky); font-weight: 500; }
+    .about-differentiators { display: flex; flex-direction: column; gap: 24px; }
+    .diff-item {
+      padding: 24px;
+      border: 0.5px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .diff-item:hover { border-color: var(--sky); background: rgba(14,165,233,0.05); }
+    .diff-num { font-family: var(--mono); font-size: 10px; color: var(--sky); letter-spacing: 0.1em; margin-bottom: 8px; }
+    .diff-title { font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.9); margin-bottom: 6px; }
+    .diff-desc { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+
+    /* â”€â”€ BRANDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #brands { background: var(--off-white); }
+    .brands-meta { font-family: var(--mono); font-size: 12px; color: var(--c-tertiary); letter-spacing: 0.04em; }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2px;
+      background: var(--c-hairline);
+      border: 0.5px solid var(--c-hairline);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .brand-cell {
+      background: var(--off-white);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      transition: background 0.2s;
+      min-height: 140px;
+    }
+    .brand-cell:hover { background: #fff; }
+    .brand-cell img { max-height: 48px; width: auto; max-width: 160px; }
+    .brand-name {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--c-tertiary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .brands-scale {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--c-tertiary);
+      letter-spacing: 0.04em;
+      padding-top: 16px;
+      border-top: 0.5px solid var(--c-hairline);
+    }
+    .brands-scale strong { color: var(--sky); font-weight: 500; }
+
+    /* â”€â”€ CASE STUDIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #work { background: #fff; }
+    .case-studies { display: flex; flex-direction: column; gap: 0; }
+    .case-study { border-top: 0.5px solid var(--c-hairline); padding: 60px 0; }
+    .case-study:last-child { border-bottom: 0.5px solid var(--c-hairline); }
+    .case-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: 40px;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+    .case-index { font-family: var(--mono); font-size: 10px; color: var(--c-tertiary); letter-spacing: 0.1em; margin-bottom: 10px; }
+    .case-title {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3vw, 36px);
+      color: var(--c-primary);
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      font-variation-settings: 'opsz' 144;
+      margin-bottom: 12px;
+    }
+    .case-logline { font-size: 15px; color: var(--c-secondary); max-width: 560px; line-height: 1.6; }
+    .case-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .case-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 2px;
+      border: 0.5px solid var(--c-hairline);
+      color: var(--c-tertiary);
+    }
+    .case-toggle {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--sky);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
+    .case-toggle-icon {
+      width: 24px; height: 24px;
+      border: 1.5px solid var(--sky);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: transform 0.3s var(--ease-out), background 0.2s;
+    }
+    .case-study.open .case-toggle-icon { transform: rotate(45deg); background: var(--sky); color: #fff; }
+    .case-body { display: none; animation: fadeSlide 0.4s var(--ease-out); }
+    .case-study.open .case-body { display: block; }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .case-hero-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+    .case-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+    .case-block-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sky); margin-bottom: 10px; }
+    .case-block-text { font-size: 14px; color: var(--c-secondary); line-height: 1.7; }
+    .case-images { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .case-img-small { aspect-ratio: 16/9; background: var(--warm-rule); border-radius: 3px; overflow: hidden; }
+    .case-img-small img { width: 100%; height: 100%; object-fit: cover; }
+    .case-img-caption { font-family: var(--mono); font-size: 10px; color: var(--c-tertiary); letter-spacing: 0.04em; margin-top: 6px; }
+    .case-result {
+      background: var(--sky-light);
+      border-left: 2px solid var(--sky);
+      padding: 24px 28px;
+      border-radius: 0 4px 4px 0;
+    }
+    .case-result-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sky-dark); margin-bottom: 8px; }
+    .case-result-text { font-size: 15px; color: var(--c-primary); line-height: 1.65; }
+    .case-result-text strong { color: var(--sky-dark); }
+
+    /* â”€â”€ SKILLS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #skills { background: var(--off-white); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2px;
+      background: var(--c-hairline);
+      border: 0.5px solid var(--c-hairline);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .skill-group { background: var(--off-white); padding: 32px; }
+    .skill-group-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sky); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 0.5px solid var(--c-hairline); }
+    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .skill-list li { font-size: 14px; color: var(--c-secondary); display: flex; align-items: center; gap: 10px; }
+    .skill-list li::before { content: ''; width: 4px; height: 4px; background: var(--mint); border-radius: 50%; flex-shrink: 0; }
+
+    /* â”€â”€ RESUME CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #resume { background: var(--c-primary); padding: 80px 0; }
+    .resume-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .resume-eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: rgba(255,255,255,0.35); text-transform: uppercase; margin-bottom: 12px; }
+    .resume-headline { font-family: var(--serif); font-size: clamp(28px, 4vw, 48px); color: #fff; letter-spacing: -0.035em; line-height: 1.06; font-weight: 700; font-variation-settings: 'opsz' 144; }
+    .resume-headline em { font-style: italic; font-weight: 300; color: var(--sky); }
+    .resume-sub { margin-top: 16px; font-size: 15px; color: rgba(255,255,255,0.55); max-width: 480px; line-height: 1.6; }
+    .resume-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--sky);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 18px 36px;
+      border-radius: 3px;
+      transition: background 0.2s, transform 0.2s;
+      white-space: nowrap;
+    }
+    .resume-download:hover { background: var(--sky-dark); transform: translateY(-2px); }
+
+    /* â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #contact { background: var(--off-white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-intro { font-size: 17px; color: var(--c-secondary); line-height: 1.75; margin-bottom: 32px; }
+    .contact-links { display: flex; flex-direction: column; gap: 16px; }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border: 0.5px solid var(--c-hairline);
+      border-radius: 4px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .contact-link:hover { border-color: var(--sky); background: var(--sky-light); }
+    .contact-link-icon { width: 36px; height: 36px; background: var(--sky-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-link-icon svg { width: 16px; height: 16px; color: var(--sky); }
+    .contact-link-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-tertiary); margin-bottom: 2px; }
+    .contact-link-value { font-size: 14px; color: var(--c-primary); }
+    .contact-form-wrap { display: flex; flex-direction: column; gap: 16px; }
+    .form-field { display: flex; flex-direction: column; gap: 6px; }
+    .form-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-tertiary); }
+    .form-input, .form-textarea {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--c-primary);
+      background: #fff;
+      border: 0.5px solid var(--c-hairline);
+      border-radius: 3px;
+      padding: 12px 16px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+    .form-input:focus, .form-textarea:focus { border-color: var(--sky); }
+    .form-textarea { min-height: 120px; resize: vertical; }
+    .form-submit {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--sky);
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--sky-dark); transform: translateY(-1px); }
+    .form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    /* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    footer { background: var(--c-primary); padding: 32px 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .footer-logo { font-family: var(--serif); font-size: 16px; color: rgba(255,255,255,0.6); letter-spacing: -0.02em; }
+    .footer-meta { font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.25); letter-spacing: 0.06em; }
+    .footer-meta a { color: var(--sky); transition: opacity 0.2s; }
+    .footer-meta a:hover { opacity: 0.7; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.35); letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--sky); }
+
+    /* â”€â”€ SCROLL ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* â”€â”€ MOBILE NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    @media (max-width: 768px) {
+      .nav-links, .nav-resume { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-mobile {
+        position: fixed;
+        inset: 0;
+        background: var(--off-white);
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        transform: translateX(100%);
+        transition: transform 0.3s var(--ease-out);
+      }
+      .nav-mobile.open { transform: none; }
+      .nav-mobile a { font-family: var(--serif); font-size: 32px; color: var(--c-primary); letter-spacing: -0.02em; }
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-photo-wrap { order: -1; max-width: 320px; margin: 0 auto; }
+      .hero-stats { gap: 24px; }
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .case-content-grid { grid-template-columns: 1fr; gap: 24px; }
+      .case-images { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .resume-inner { flex-direction: column; }
+      .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
+    }
+    @media (max-width: 640px) {
+      .container { padding: 0 20px; }
+      section { padding: 72px 0; }
+      .brands-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero-stats { flex-wrap: wrap; gap: 16px 28px; }
+      .hero-stat-num { font-size: 28px; }
+      .hero-actions { gap: 10px; }
+      .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+      .brand-cell { padding: 24px 16px; min-height: 100px; }
+      .section-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .resume-inner { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#work" onclick="closeMobile()">Work</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#brands" onclick="closeMobile()">Brands</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="ian-resume.pdf" download style="color: var(--sky); font-size: 24px;">Resume â†“</a>
+  </div>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Ian<span>.</span>Schumacher</a>
+        <ul class="nav-links">
+          <li><a href="#work">01 â€” Work</a></li>
+          <li><a href="#about">02 â€” About</a></li>
+          <li><a href="#brands">03 â€” Brands</a></li>
+          <li><a href="#skills">04 â€” Skills</a></li>
+          <li><a href="#contact">05 â€” Contact</a></li>
+        </ul>
+        <a href="ian-resume.pdf" download class="nav-resume">Resume â†“</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobile()" role="button" tabindex="0" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-rule"></div>
+          <p class="eyebrow hero-eyebrow">Senior Designer &amp; Brand Strategist â€” Denver, CO</p>
+          <h1 class="hero-headline">
+            12 years building<br>
+            <em>brand systems</em><br>
+            that scale.
+          </h1>
+          <p class="hero-sub">
+            Currently the sole creative for <strong style="color:var(--c-primary);font-weight:500;">7 brands</strong> and <strong style="color:var(--c-primary);font-weight:500;">2 franchise groups</strong> at FullSpeed Automotive â€” parent company of Grease Monkey, SpeeDee, and Kwik Kar. Print, digital, and everything in between.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">
+              View Work
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="ian-resume.pdf" download class="btn-secondary">
+              Download Resume
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4m4 4l4-4m-4 4V4M4 20h16"/></svg>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">12<span>+</span></div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">7</div>
+              <div class="hero-stat-label">Brands Managed</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">475<span>+</span></div>
+              <div class="hero-stat-label">Locations</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">153<span>%</span></div>
+              <div class="hero-stat-label">CTR Lift YoY</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-photo-wrap reveal">
+          <div class="hero-photo-frame">
+            <img src="ian-headshot.png" alt="Ian Schumacher â€” Senior Designer &amp; Brand Strategist" loading="eager" />
+          </div>
+          <div class="hero-photo-accent"></div>
+          <div class="hero-photo-tag">
+            <div class="tag-num">200+</div>
+            <div class="tag-label">Locations Rebranded</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-number">02 â€” ABOUT</div>
+          <h2 class="section-title">The full picture.</h2>
+        </div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-body">
+          <p>I'm a senior graphic designer and brand strategist with <strong>12+ years of experience</strong> across the full design spectrum â€” from hands-on print production and screen printing, to running my own creative studio, to managing a multi-brand design system for one of the largest automotive franchise networks in the country.</p>
+          <p>At <strong>FullSpeed Automotive</strong>, I'm the sole creative responsible for 7 brands across 475+ franchise locations. That means I don't just make things look good â€” I build systems, manage brand integrity across dozens of stakeholders, and use modern tools (including <strong>AI-assisted workflows</strong>) to improve creative output at scale.</p>
+          <p>Before that, I founded and operated <strong>Printability LLC</strong>, a full-service creative studio in Bozeman, MT offering branded merchandise, screen printing, and graphic design. Running a business taught me things most designers never learn: how to own a project end-to-end, how to manage client relationships, and how to make decisions when there's no one above you to ask.</p>
+          <p>I'm based in Denver, CO and open to senior in-house and brand management roles â€” in Denver, Bozeman, Duluth, Spokane, or remote.</p>
+        </div>
+        <div class="about-differentiators">
+          <div class="diff-item">
+            <div class="diff-num">01</div>
+            <div class="diff-title">Multi-brand at scale</div>
+            <div class="diff-desc">7 brands / 2 franchise groups simultaneously. Most designers manage one brand at a time.</div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">02</div>
+            <div class="diff-title">End-to-end ownership</div>
+            <div class="diff-desc">Concept â†’ production â†’ print/digital delivery. No handoffs, no gaps.</div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">03</div>
+            <div class="diff-title">Business operator</div>
+            <div class="diff-desc">Ran a company. Most designers haven't. That changes how you think about work.</div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">04</div>
+            <div class="diff-title">Modern toolkit</div>
+            <div class="diff-desc">Figma, AI-assisted workflows, After Effects, Mailchimp. Not just Adobe CC.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-number">03 â€” MANAGED BRANDS</div>
+          <h2 class="section-title">The portfolio of brands.</h2>
+        </div>
+        <p class="brands-meta">7 brands Â· 2 franchise groups Â· 475+ locations</p>
+      </div>
+      <div class="brands-grid reveal">
+        <div class="brand-cell">
+          <img src="logo-fullspeed.png" alt="FullSpeed Automotive" loading="lazy" />
+          <span class="brand-name">FullSpeed Automotive</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-grease-monkey.png" alt="Grease Monkey" loading="lazy" />
+          <span class="brand-name">Grease Monkey</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-speedee.png" alt="SpeeDee" loading="lazy" />
+          <span class="brand-name">SpeeDee</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-kwik-kar.png" alt="Kwik Kar" loading="lazy" />
+          <span class="brand-name">Kwik Kar</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-economy-oil.png" alt="Economy Oil" loading="lazy" />
+          <span class="brand-name">Economy Oil</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-herbert.png" alt="Herbert Automotive" loading="lazy" />
+          <span class="brand-name">Herbert Automotive</span>
+        </div>
+        <div class="brand-cell">
+          <img src="logo-learningrx.png" alt="LearningRx" loading="lazy" />
+          <span class="brand-name">LearningRx</span>
+        </div>
+      </div>
+      <p class="brands-scale">Sole designer responsible for brand consistency across <strong>print, digital, in-store, environmental, and event materials</strong> for all 7 brands.</p>
+    </div>
+  </section>
+
+  <!-- WORK / CASE STUDIES -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-number">01 â€” SELECTED WORK</div>
+          <h2 class="section-title">Case studies.</h2>
+        </div>
+        <a href="https://inksandicons.com" class="eyebrow" style="color:var(--sky); display:flex; align-items:center; gap:6px;">
+          Full gallery at inksandicons.com â†’
+        </a>
+      </div>
+
+      <div class="case-studies">
+
+        <!-- CASE 01: FullSpeed Brand System -->
+        <div class="case-study reveal" id="case-fullspeed">
+          <div class="case-header" onclick="toggleCase('case-fullspeed')">
+            <div>
+              <div class="case-index">01 â€” BRAND SYSTEM</div>
+              <h3 class="case-title">FullSpeed Automotive Brand System</h3>
+              <p class="case-logline">Building and maintaining a unified design system across 7 brands and 2 franchise groups â€” 475+ locations, zero inconsistency.</p>
+              <div class="case-tags">
+                <span class="case-tag">Brand Strategy</span>
+                <span class="case-tag">Guidelines</span>
+                <span class="case-tag">Multi-Brand</span>
+                <span class="case-tag">Print + Digital</span>
+              </div>
+            </div>
+            <div class="case-toggle">
+              <span>View Case</span>
+              <span class="case-toggle-icon">+</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <img class="case-hero-img" src="case-fullspeed-hero.png" alt="FullSpeed Automotive Brand System" loading="lazy" />
+            <div class="case-content-grid">
+              <div>
+                <div class="case-block-label">â†³ The Challenge</div>
+                <p class="case-block-text">FullSpeed Automotive operates 7 distinct consumer brands under one parent company. Each brand has its own identity, customer base, and franchise network â€” but needed to coexist within a coherent system. As the sole designer, I was responsible for making that happen across every touchpoint.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ My Role</div>
+                <p class="case-block-text">Sole designer and brand manager. I owned the brand guidelines development, template creation, franchise rollout communication, and ongoing asset production across all 7 brands. Everything from in-store signage to digital campaigns to convention identity.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ The Work</div>
+                <p class="case-block-text">Developed comprehensive brand guidelines for each brand. Built a scalable template library for print and digital. Created franchise marketing toolkits adopted across all channels. Managed brand reviews, approvals, and updates on an ongoing basis.</p>
+              </div>
+            </div>
+            <div class="case-images" style="grid-template-columns: 1fr 1fr 1fr;">
+              <div>
+                <div class="case-img-small">
+                  <img src="case-fullspeed-01.png" alt="FullSpeed brand guidelines â€” typography, color, usage rules" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Brand guidelines â€” typography, color, usage rules</p>
+              </div>
+              <div>
+                <div class="case-img-small">
+                  <img src="case-fullspeed-02.jpg" alt="FullSpeed environmental application across franchise locations" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Environmental / in-store application across franchise locations</p>
+              </div>
+              <div>
+                <div class="case-img-small">
+                  <img src="case-fullspeed-03.jpg" alt="FullSpeed brand system in production" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Brand system across print and digital channels</p>
+              </div>
+            </div>
+            <div class="case-result">
+              <div class="case-result-label">â†³ The Result</div>
+              <p class="case-result-text">Brand system deployed across <strong>475+ franchise locations</strong>. Consistent visual identity maintained across print, digital, in-store, and environmental channels for all 7 brands simultaneously. Franchise marketing adoption rate improved through standardized template library.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE 02: Annual Convention Branding -->
+        <div class="case-study reveal" id="case-convention">
+          <div class="case-header" onclick="toggleCase('case-convention')">
+            <div>
+              <div class="case-index">02 â€” EVENT IDENTITY</div>
+              <h3 class="case-title">Annual Convention Branding</h3>
+              <p class="case-logline">Designing the complete visual identity for FullSpeed Automotive's annual brand conventions â€” including a fully digital event.</p>
+              <div class="case-tags">
+                <span class="case-tag">Event Identity</span>
+                <span class="case-tag">Environmental Design</span>
+                <span class="case-tag">Digital Event</span>
+                <span class="case-tag">Print Production</span>
+              </div>
+            </div>
+            <div class="case-toggle">
+              <span>View Case</span>
+              <span class="case-toggle-icon">+</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <img class="case-hero-img" src="case-convention-hero.jpg" alt="Annual Convention Branding" loading="lazy" />
+            <div class="case-content-grid">
+              <div>
+                <div class="case-block-label">â†³ The Challenge</div>
+                <p class="case-block-text">Design a full event identity system for FullSpeed Automotive's annual conventions from scratch â€” covering signage, stage, print, digital screens, badges, programs, and attendee materials. One of those events pivoted to a fully digital format, requiring a complete rethink of the design approach.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ My Role</div>
+                <p class="case-block-text">Led all visual identity work for 3 annual conventions. Owned concept development, production design, and delivery across print and digital. For the digital event, designed all screen templates, virtual backgrounds, motion graphics, and digital attendee materials.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ The Work</div>
+                <p class="case-block-text">Created a bespoke event identity for each convention that worked within the parent brand system while standing on its own. Delivered hundreds of production-ready assets for physical and digital deployment across multiple vendor partners.</p>
+              </div>
+            </div>
+            <div class="case-images">
+              <div>
+                <div class="case-img-small">
+                  <img src="case-convention-01.jpg" alt="Convention print materials â€” badges, programs, signage" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Print materials â€” badges, programs, signage, environmental</p>
+              </div>
+              <div>
+                <div class="case-img-small">
+                  <img src="case-convention-02.jpg" alt="Digital event â€” screen templates and virtual backgrounds" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Digital event â€” screen templates, virtual backgrounds, presentations</p>
+              </div>
+            </div>
+            <div class="case-result">
+              <div class="case-result-label">â†³ The Result</div>
+              <p class="case-result-text">3 annual conventions fully designed and delivered. Complete event identity systems â€” from concept to production-ready files â€” for <strong>in-person and digital formats</strong>. Each convention had a distinct visual identity that reinforced the parent brand while creating its own memorable moment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE 03: Grease Monkey Rebrand -->
+        <div class="case-study reveal" id="case-gm">
+          <div class="case-header" onclick="toggleCase('case-gm')">
+            <div>
+              <div class="case-index">03 â€” REBRAND</div>
+              <h3 class="case-title">Grease Monkey Rebrand</h3>
+              <p class="case-logline">A full visual identity overhaul for Grease Monkey International â€” rolled out across 200+ franchise locations nationwide.</p>
+              <div class="case-tags">
+                <span class="case-tag">Rebrand</span>
+                <span class="case-tag">Franchise Rollout</span>
+                <span class="case-tag">Print + Digital</span>
+                <span class="case-tag">153% CTR Lift</span>
+              </div>
+            </div>
+            <div class="case-toggle">
+              <span>View Case</span>
+              <span class="case-toggle-icon">+</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <img class="case-hero-img" src="case-gm-hero.png" alt="Grease Monkey Rebrand" loading="lazy" />
+            <div class="case-content-grid">
+              <div>
+                <div class="case-block-label">â†³ The Challenge</div>
+                <p class="case-block-text">Grease Monkey's visual identity had grown inconsistent across hundreds of independently-operated franchise locations. The brand needed a cohesive refresh that could be adopted at scale â€” across signage, print, digital, in-store, and marketing materials â€” without disrupting franchise operations.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ My Role</div>
+                <p class="case-block-text">Led the full rebrand as sole designer. Responsible for identity development, brand guidelines, franchise communication, template library creation, and rollout coordination. Also owned ongoing multichannel campaign creative, including email and digital advertising.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ The Work</div>
+                <p class="case-block-text">Redesigned the full visual system â€” color, typography, photography style, iconography, and tone. Produced the complete franchise rollout kit: signage specs, print templates, digital asset libraries, and brand guidelines. Managed the creative for all outbound marketing campaigns.</p>
+              </div>
+            </div>
+            <div class="case-images">
+              <div>
+                <div class="case-img-small">
+                  <img src="case-gm-before.jpg" alt="Grease Monkey before rebrand" loading="lazy" />
+                </div>
+                <p class="case-img-caption">Before â€” existing brand materials pre-rebrand</p>
+              </div>
+              <div>
+                <div class="case-img-small">
+                  <img src="case-gm-after.jpg" alt="Grease Monkey after rebrand" loading="lazy" />
+                </div>
+                <p class="case-img-caption">After â€” new brand system applied across touchpoints</p>
+              </div>
+            </div>
+            <div class="case-result">
+              <div class="case-result-label">â†³ The Result</div>
+              <p class="case-result-text">Brand rolled out across <strong>200+ franchise locations</strong>. Digital and email campaign creative improved click-through rate by <strong>153% year-over-year</strong> through creative strategy and A/B testing. Franchise brand compliance improved significantly through standardized toolkits.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE 04: AI Workflow Implementation -->
+        <div class="case-study reveal" id="case-ai">
+          <div class="case-header" onclick="toggleCase('case-ai')">
+            <div>
+              <div class="case-index">04 â€” PROCESS INNOVATION</div>
+              <h3 class="case-title">AI Workflow Implementation</h3>
+              <p class="case-logline">How I integrated AI tools into the design process to improve output quality and reduce production time â€” as the sole creative for 7 brands.</p>
+              <div class="case-tags">
+                <span class="case-tag">AI Tools</span>
+                <span class="case-tag">Workflow Design</span>
+                <span class="case-tag">Process Innovation</span>
+                <span class="case-tag">Creative Ops</span>
+              </div>
+            </div>
+            <div class="case-toggle">
+              <span>View Case</span>
+              <span class="case-toggle-icon">+</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-content-grid">
+              <div>
+                <div class="case-block-label">â†³ The Challenge</div>
+                <p class="case-block-text">As the sole designer for 7 brands, volume and speed are constant constraints. I needed to find ways to maintain quality across an expanding workload without adding headcount. AI tools offered a path â€” but only if integrated thoughtfully into an existing production workflow.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ My Role</div>
+                <p class="case-block-text">Identified, tested, and implemented AI tools across the creative workflow. Built prompt systems and production templates that allowed consistent, brand-accurate output at speed. Documented the workflow for future reference and potential team adoption.</p>
+              </div>
+              <div>
+                <div class="case-block-label">â†³ The Work</div>
+                <p class="case-block-text">Integrated AI tools for asset generation, copy drafting, image preparation, and creative review cycles. Built brand-specific prompt libraries for each of the 7 brands. Streamlined the review-and-revision loop with AI-assisted iterations before sending to stakeholders.</p>
+              </div>
+            </div>
+            <div class="case-result">
+              <div class="case-result-label">â†³ The Result</div>
+              <p class="case-result-text">Meaningfully reduced production time on repeatable asset types. Improved output quality through faster iteration cycles. Created a documented, <strong>repeatable AI workflow</strong> that scales with the brand portfolio â€” a model that translates directly to any in-house design team looking to work smarter.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-number">04 â€” SKILLS & TOOLS</div>
+          <h2 class="section-title">The toolkit.</h2>
+        </div>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-label">Design Tools</div>
+          <ul class="skill-list">
+            <li>Adobe Illustrator</li>
+            <li>Adobe InDesign</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Acrobat</li>
+            <li>Figma</li>
+            <li>After Effects</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Production</div>
+          <ul class="skill-list">
+            <li>Print production</li>
+            <li>File prep (print + digital)</li>
+            <li>Screen printing</li>
+            <li>Prepress / preflight</li>
+            <li>Apparel & merchandise</li>
+            <li>Environmental / signage</li>
+            <li>Packaging design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Brand & Marketing</div>
+          <ul class="skill-list">
+            <li>Brand guidelines development</li>
+            <li>Multi-brand management</li>
+            <li>Multichannel campaigns</li>
+            <li>Email design (Mailchimp)</li>
+            <li>Social media graphics</li>
+            <li>AI-assisted workflows</li>
+            <li>Prompt design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Tech & Soft Skills</div>
+          <ul class="skill-list">
+            <li>WordPress</li>
+            <li>Microsoft Office Suite</li>
+            <li>Google Workspace</li>
+            <li>Project management</li>
+            <li>Cross-functional collaboration</li>
+            <li>Franchise stakeholder mgmt</li>
+            <li>Business operations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME CTA -->
+  <section id="resume">
+    <div class="container">
+      <div class="resume-inner">
+        <div class="resume-left">
+          <div class="resume-eyebrow">05 â€” RESUME</div>
+          <h2 class="resume-headline">The full story,<br><em>one page.</em></h2>
+          <p class="resume-sub">12 years of experience, results you can point to, and a toolkit built for in-house brand work at scale.</p>
+        </div>
+        <a href="ian-resume.pdf" download class="resume-download">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4m4 4l4-4m-4 4V4M4 20h16"/></svg>
+          Download Resume PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-number">06 â€” CONTACT</div>
+          <h2 class="section-title">Let's talk.</h2>
+        </div>
+      </div>
+      <div class="contact-grid reveal">
+        <div>
+          <p class="contact-intro">
+            I'm currently exploring senior in-house design and brand management roles. If you're looking for someone who can own a brand system end-to-end â€” from strategy to production to delivery â€” I'd love to connect.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:ian@inksandicons.com" class="contact-link">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">ian@inksandicons.com</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/ian-schumacher-013bb132" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/ian-schumacher-013bb132</div>
+              </div>
+            </a>
+            <a href="https://inksandicons.com" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <div class="contact-link-label">Work Gallery</div>
+                <div class="contact-link-value">inksandicons.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Formspree: sign up at formspree.io, create a form, replace mojbppwo -->
+        <form class="contact-form-wrap" id="contactForm" action="https://formspree.io/f/mojbppwo" method="POST">
+          <div class="form-field">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="formSubmit">Send Message â†’</button>
+          <p id="formStatus" style="display:none; font-family:var(--mono); font-size:12px; letter-spacing:0.06em; padding-top:8px;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Ian Schumacher</span>
+        <div class="footer-links">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="https://inksandicons.com" target="_blank">Gallery</a>
+          <a href="ian-resume.pdf" download>Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-meta">
+          <span style="color:rgba(255,255,255,0.2)">v1.0 Â· 2026 Â· </span>
+          <span style="color:rgba(255,255,255,0.2)">accent </span>
+          <span style="color:var(--sky); font-family:var(--mono);">#0ea5e9</span>
+          <span style="color:rgba(255,255,255,0.2)"> Â· </span>
+          <span style="color:var(--mint); font-family:var(--mono);">#4ec994</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // â”€â”€ CURSOR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const cursor = document.getElementById('cursor');
+    const dot    = document.getElementById('cursor-dot');
+    let mx = 0, my = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+      dot.style.left    = mx + 'px';
+      dot.style.top     = my + 'px';
+    });
+    document.querySelectorAll('a, button, .case-header, .diff-item').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // â”€â”€ NAV SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // â”€â”€ MOBILE NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    document.getElementById('hamburger').addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMobile(); }
+    });
+    function toggleMobile() {
+      const open = document.getElementById('mobileNav').classList.toggle('open');
+      document.getElementById('hamburger').setAttribute('aria-expanded', open);
+    }
+    function closeMobile() {
+      document.getElementById('mobileNav').classList.remove('open');
+      document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+    }
+
+    // â”€â”€ CASE STUDY TOGGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    function toggleCase(id) {
+      const el = document.getElementById(id);
+      const wasOpen = el.classList.contains('open');
+      document.querySelectorAll('.case-study').forEach(c => {
+        c.classList.remove('open');
+        c.querySelector('.case-header').setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        el.classList.add('open');
+        el.querySelector('.case-header').setAttribute('aria-expanded', 'true');
+      }
+    }
+    document.querySelectorAll('.case-header').forEach(header => {
+      header.setAttribute('role', 'button');
+      header.setAttribute('tabindex', '0');
+      header.setAttribute('aria-expanded', 'false');
+      header.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); header.click(); }
+      });
+    });
+
+    // â”€â”€ SCROLL REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const revealEls = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => obs.observe(el));
+
+    // â”€â”€ FORM (Formspree) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn    = document.getElementById('formSubmit');
+        const status = document.getElementById('formStatus');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        try {
+          const res = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            status.style.display = 'block';
+            status.style.color = 'var(--mint-dark)';
+            status.textContent = 'Message sent â€” I\'ll be in touch.';
+            contactForm.reset();
+          } else {
+            throw new Error();
+          }
+        } catch {
+          status.style.display = 'block';
+          status.style.color = '#c0392b';
+          status.textContent = 'Something went wrong. Reach me at ian@inksandicons.com';
+        }
+        btn.textContent = 'Send Message â†’';
+        btn.disabled = false;
+      });
+    }
+
+    // â”€â”€ EASTER EGG: CONSOLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    console.log('%c\nâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•—\nâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘\nâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘\nâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘\nâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ•‘\nâ•šâ•â•â•šâ•â•  â•šâ•â•â•šâ•â•  â•šâ•â•â•\n\nyou found the press room.\nian@inksandicons.com', 'color: #0ea5e9; font-family: monospace; font-size: 12px;');
+
+    // â”€â”€ EASTER EGG: BLUEPRINT MODE (Konami) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    let konamiSeq = [];
+    const konamiCode = [38,38,40,40,37,39,37,39,66,65];
+    document.addEventListener('keydown', e => {
+      konamiSeq.push(e.keyCode);
+      if (konamiSeq.length > 10) konamiSeq.shift();
+      if (konamiSeq.join(',') === konamiCode.join(',')) {
+        document.body.classList.toggle('blueprint');
+      }
+    });
+  </script>
+
+  <style>
+    /* Blueprint easter egg mode */
+    body.blueprint {
+      background: #003b6e !important;
+      filter: hue-rotate(180deg) invert(0.85);
+      transition: all 0.4s;
+    }
+    body.blueprint * { cursor: crosshair !important; }
+    body.blueprint #cursor, body.blueprint #cursor-dot { display: none; }
+  </style>
+
+</body>
+</html>
+
+
